@@ -1,0 +1,32 @@
+* {
+    font-family: "Comic Sans MS";
+}
+
+#maincontainer {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    width: 170px;
+    height: 70px;
+    background-color: red;
+    color: antiquewhite;
+    border-radius: 20%;
+}
+
+#displaycontainer {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(31, 6, 6);
+    border-radius: 100%;
+}
+
+.changebuttonspecs {
+    background-color: rgb(127, 224, 127);
+    color:black;
+}
+
+.coolcircle {
+    background-color: aquamarine !important
+}

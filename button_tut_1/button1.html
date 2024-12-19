@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button tutorial 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Button Toggle Exercise Part 1</h1><hr><br>
+    <div id="maincontainer">
+        <!-- main container starts here-->
+
+        <div id="button container">
+            <button type="button" id="togglebutton" onclick="toggleButton()"><p id="togglebuttoncaps">BUTTON OFF</p></button>
+        </div>
+
+        <div id="displaycontainer">
+            <!-- fake circle -->
+
+        </div>
+
+        <!--main container ends here-->
+    </div>
+    <script>
+        //js here
+
+        //we grab the elements 
+        //button element
+
+        let grabButton=document.getElementById("togglebutton");
+        //grab button caps element
+        let toggleButtonCaps=document.getElementById("togglebuttoncaps");
+
+        let bigCircle=document.getElementById("displaycontainer");
+
+        // button state
+        let buttonState=false;
+
+        function toggleButton(){
+            buttonState=(!buttonState);
+            //button=1-button also possible
+            console.log(buttonState)
+
+            if (buttonState){
+                console.log("button on");
+                toggleButtonCaps.innerText="BUTTON ON"
+                grabButton.classList.add("changebuttonspecs");
+                bigCircle.classList.add("coolcircle");
+
+            }else{
+                console.log("button off")
+                toggleButtonCaps.innerText="BUTTON OFF"
+                grabButton.classList.remove("changebuttonspecs");
+                bigCircle.classList.remove("coolcircle");
+            }
+        }
+
+    </script>
+</body>
+</html>
